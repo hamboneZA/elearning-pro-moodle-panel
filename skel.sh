@@ -36,7 +36,7 @@ sudo chmod -R 0777 moodledata
 sudo find moodledata -type f -exec chmod 0664 {} \;
 sudo chown public_html $VIRTUALSERVER_USER:$VIRTUALSERVER_USER
 
-echo moodle code is ready for installation at the front end to customize a moodle instance, or run ~/install_moodle.sh 
+echo moodle code is ready for installation at the front end to customize a moodle instance, or run ~/init.sh 
 echo from the virtual server control panel to install moodle on this virtual server with defaults and demo data.
 
 <EOF>
