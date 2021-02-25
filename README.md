@@ -34,12 +34,12 @@ After running these scripts you should be sure to check these before taking your
 4. Run the backup tool on Cyber Panel to check whether backups complete in a reasonable time and make absolutely certain that the backup it creates can be restored again. Check this monthly if you can. It's important. 
 5. You can edit config.php via SSH only (for now) so any changes made using the Cyber Panel front end for the virtual server won't iterate to the live site until the webserver is reloaded. I mean, you can edit it but the changes will only reflect if the webserver is reloaded at all, but on default Cyber Panel installs this happens roughly four hours.
 
-To take the site out of maintainance mode login to moodle as an adminitrator at /admin and turn it off at Admin > System > Maintainance mode or use SSH to run </code>sudo -u [VIRTUALSERVERUSER] php ~/public_html/admin/cli/maintainancemode.php --disable</code>
+To take the site out of maintainance mode login to moodle as an adminitrator at /admin and turn it off at Admin > System > Maintainance mode or use SSH to run <code>sudo -u [VIRTUALSERVERUSER] php ~/public_html/admin/cli/maintainancemode.php --disable</code>
 
 # To-do
 
 1. <code>--quiet</code> parameter is not implemented yet so using it will throw syntax errors at the moment. Sorry about that. The output from scripts will print witout it. Not a problem but not as elegant as it should be for setting up a new virtual server. I'll be back. 
-2. <code>The output of these scripts isn't all that helpful for debugging using the log it creates, so this needs work. Still the usual logs can be used just as easily or you can pipe to stdout or stderr or tee them both when running these.
+2. The output of these scripts isn't all that helpful for debugging using the log it creates, so this needs work. Still the usual logs can be used just as easily or you can pipe to stdout or stderr or tee them both when running these.
 3. ... add default site content. An empty moodle is a sad moodle. Some default content, perhaps a course and a couple or demo users, would be a benefit for new moodle users and as a nice to have for post-intall notifications. I'll likely do this using git on the Cyber Panel server instead of pulling Moodle from source.
 
 That's all. Bye!
