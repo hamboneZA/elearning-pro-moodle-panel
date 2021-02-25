@@ -33,3 +33,5 @@ echo ---------------------------------------------------------------------------
 
 echo let the logs reflect this install completed in less than 15 minutes and you\'re OK
 echo bye!
+
+<EOF>
