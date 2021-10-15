@@ -1,5 +1,7 @@
 # Moodle on Cyber Panel
 
+Yes
+
 These few scripts help build a moodle virtual server on Cyber Panel. To do everything wihout any interaction add the following to the virtual server creation wizard after saving these scripts to the virtual server creator's home directory (remember to make them executable <code>sudo chmod +x</code>:
 
 <code>non-interactive.sh --quite</code>
